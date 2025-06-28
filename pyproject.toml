@@ -1,0 +1,38 @@
+[project]
+name = "postgres-nl-agent"
+version = "0.1.0"
+description = "An AI-powered voice and text agent for natural language-driven database interactions"
+authors = [
+    {name = "Hazz Saeed Haris",email = "github.com.parcel171@passinbox.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "psycopg2-binary>=2.9.0",
+    "sqlalchemy>=2.0.0",
+    "google-cloud-speech>=2.21.0",
+    "google-cloud-texttospeech>=2.16.0",
+    "google-cloud-dialogflow>=2.23.0",
+    "google-generativeai>=0.3.0",
+    "python-multipart>=0.0.6",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "pydub>=0.25.1",
+    "soundfile>=0.12.1",
+    "numpy>=1.24.0",
+    "requests>=2.31.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
